@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Booster.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Booster.ico" />
+    <EmbeddedResource Include="LICENSE" LogicalName="PCSoundBooster.License" />
+    <EmbeddedResource Include="third-party\EqualizerAPO-x64-1.4.2.exe" LogicalName="EqualizerAPO.Setup" />
+  </ItemGroup>
+</Project>
